@@ -17,39 +17,40 @@
   <link rel="stylesheet" href="output.css">
 </head>
 <body class="h-screen bg-[#0b0f1a] relative">
-  <header class="fixed w-full bg-linear-to-r from-[#121f3d] via-[#1e3a8a] to-[#2563eb] h-12 bg left-0 bottom-0 md:top-0" id="header">
+  <header class="fixed w-full bg-linear-to-r from-[#121f3d] via-[#1e3a8a] to-[#2563eb]
+                  h-12 bg left-0 bottom-0 md:top-0" id="header">
     <nav>
       <ul class="text-center">
         <li class="active inline-block hover:bg-[#319fff]">
-          <a class="block px-2 py-3 mx-6 md:mx-3" href="#home">
+          <a class="block px-2 py-3 mx-4 md:mx-3" href="#home">
             <i class="bxf bx-home text-center text-white"></i>
             <span class="hidden md:inline-block text-white">Home</span>
           </a>
         </li>
 
         <li class="active inline-block hover:bg-[#319fff]">
-          <a class="block px-2 py-3 mx-6 md:mx-3" href="#about">
+          <a class="block px-2 py-3 mx-4 md:mx-3" href="#about">
             <i class="bxf bx-user text-white"></i>
             <span class="hidden md:inline-block text-white">About</span>
           </a>
         </li>
 
         <li class="active inline-block hover:bg-[#319fff]">
-          <a class="block px-2 py-3 mx-6 md:mx-3" href="#skills">
+          <a class="block px-2 py-3 mx-4 md:mx-3" href="#skills">
             <i class="bxf bx-laptop text-white"></i>
             <span class="hidden md:inline-block text-white">Skills</span>
           </a>
         </li>
         
         <li class="active inline-block hover:bg-[#319fff]">
-          <a class="block px-2 py-3 mx-6 md:mx-3" href="#projects">
+          <a class="block px-2 py-3 mx-4 md:mx-3" href="#projects">
             <i class="bxf bx-folder text-center text-white"></i>
             <span class="hidden md:inline-block text-white">Projects</span>
           </a>
         </li>
 
         <li class="active inline-block hover:bg-[#319fff]">
-          <a class="block px-2 py-3 mx-6 md:mx-3" href="#contact">
+          <a class="block px-2 py-3 mx-4 md:mx-3" href="#contact">
             <i class="bxf bx-envelope text-white"></i>
             <span class="hidden md:inline-block text-white">Contact</span>
           </a>
@@ -60,26 +61,29 @@
   </header>
 
   <!-- Home section -->
-  <section id="home">
-    <div class="container w-full h-screen flex flex-col md:flex-row-reverse justify-center items-center mx-auto pb-30">
+  <section id="home" class="h-screen flex flex-col items-center justify-center m-4">
+    <div class="container w-full h-screen flex flex-col md:flex-row-reverse justify-center
+                md:justify-between items-center mx-auto pb-30">
 
       
       <img src="assets/images/1000024491.png" class="w-64 md:w-105 md:pr-5">
       
-      <div class="text max-w-10/12 md:ml-6 md:pl-6 md:mr-16">
+      <div class="text max-w-10/12 md:ml-3 md:pl-3">
         <h3 class="text-white text-sm md:text-2xl mb-4">Hey, I am</h3>
         <h2 class="text-white text-3xl md:text-5xl uppercase font-bold">Tazrian Islam</h2>
         <h4 class=" text-[#2eb3ff] mb-9 md:text-xl italic">Front-end Developer</h4>
-        <p class="text-white md:text-xl">Currently focused on front-end development, with a growing interest in full-stack technologies.</p>
+        <p class="text-white text-xl md:text-xl">Currently focused on front-end development, with a
+          growing interest in full-stack technologies.
+        </p>
       </div>
       
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="h-screen flex flex-col items-center justify-center m-4">
     <h1 class="text-[#2eb3ff] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">About Me</h1>
-    <p class="text-white m-3 p-3 text-xl md:ml-6 md:pl-6 md:mr-16">I am a web developer who believes faith and work 
+    <p class="text-white m-3 p-3 text-xl">I am a web developer who believes faith and work 
       should align. <span class="text-[#2eb3ff] font-bold">My Islamic values shape how 
       I approach technology.</span> I aim to create clean, 
       useful, and responsible digital solutions.
@@ -90,15 +94,83 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
-    <h1 class="text-[#2eb3ff] text-center mt-16 md:mt-32 mb-8 text-2xl md:text-4xl font-bold uppercase">Skills</h1>
-    <div class="images">
-      <div class="image">
+  <section id="skills" class="h-screen flex flex-col items-center justify-center m-4">
+    <h1 class="text-[#2eb3ff] text-center mb-4 text-2xl md:text-4xl font-bold uppercase">Skills</h1>
+    
+    <div class="images flex flex-wrap justify-center ml-2 mr-2 mt-8 gap-4">
+      <div class="image bg-transparent border-4 border-[#e44d26] w-36 h-12 flex justify-center items-center p-3">
+        <img src="assets/images/html-5-svgrepo-com.png" class="w-7 h-7 mr-1 ">
+        <span class=" text-[#e44d26] font-bold text-2xl text-center pb-1">HTML</span>
+      </div>
 
+      <div class="image bg-transparent border-4 border-[#1172b8] w-36 h-12 flex justify-center items-center p-3">
+        <img src="assets/images/css-3-svgrepo-com.png" class="w-7 h-7 mr-1 ">
+        <span class=" text-[#1172b8] font-bold text-2xl text-center pb-1">CSS</span>
+      </div>
+
+      <div class="image bg-transparent border-4 border-[#f7df1e] w-36 h-12 flex justify-center items-center p-3">
+        <img src="assets/images/javascript-svgrepo-com.png" class="w-6 h-6 mr-1 ">
+        <span class=" text-[#f7df1e] font-bold text-xl text-center pb-1">Javascipt</span>
       </div>
     </div>
   </section>
 
+  <!-- Section Projects -->
+  <section id="projects" class="h-screen flex flex-col items-center justify-center m-4">
+    <h1 class="text-[#2eb3ff] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Projects</h1>
+    <div class="projects flex flex-wrap items-center justify-center gap-6 mb-12">
+      <div class="project flex flex-col justify-center w-64 md:w-84 border border-[#2eb3ff] rounded-lg p-2 pl-3
+                  hover:scale-110 hover:shadow-[3px_3px_5px_rgba(177,237,255,0.3)] cursor-pointer transition">
+        <h2 class="text-[#2eb3ff] text-[17px] font-bold mb-1">Project 1</h2>
+        <p class="text-white text-sm mb-3">Lorem ipsum dolor sit amet.</p>
+        <p><a href="" class="text-[#2eb3ff] text-sm cursor-pointer hover:underline">Live Link</a></p>
+      </div>
+
+      <div class="project flex flex-col justify-center w-64 md:w-84 border border-[#2eb3ff] rounded-lg p-2 pl-3
+                  hover:scale-110 hover:shadow-[3px_3px_5px_rgba(177,237,255,0.3)] cursor-pointer transition">
+        <h2 class="text-[#2eb3ff] text-[17px] font-bold mb-1">Project 1</h2>
+        <p class="text-white text-sm mb-3">Lorem ipsum dolor sit amet.</p>
+        <p><a href="" class="text-[#2eb3ff] text-sm cursor-pointer hover:underline">Live Link</a></p>
+      </div>
+
+      <div class="project flex flex-col justify-center w-64 md:w-84 border border-[#2eb3ff] rounded-lg p-2 pl-3
+                  hover:scale-110 hover:shadow-[3px_3px_5px_rgba(177,237,255,0.3)] cursor-pointer transition">
+        <h2 class="text-[#2eb3ff] text-[17px] font-bold mb-1">Project 1</h2>
+        <p class="text-white text-sm mb-3">Lorem ipsum dolor sit amet.</p>
+        <p><a href="" class="text-[#2eb3ff] text-sm cursor-pointer hover:underline">Live Link</a></p>
+      </div>
+
+      <div class="project flex flex-col justify-center w-64 md:w-84 border border-[#2eb3ff] rounded-lg p-2 pl-3
+                  hover:scale-110 hover:shadow-[3px_3px_5px_rgba(177,237,255,0.3)] cursor-pointer transition">
+        <h2 class="text-[#2eb3ff] text-[17px] font-bold mb-1">Project 1</h2>
+        <p class="text-white text-sm mb-3">Lorem ipsum dolor sit amet.</p>
+        <p><a href="" class="text-[#2eb3ff] text-sm cursor-pointer hover:underline">Live Link</a></p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="h-screen flex flex-col items-center justify-center m-4">
+    <h1 class="text-[#2eb3ff] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Contact Form</h1>
+    <form class="flex flex-col w-full justify-center">
+      
+        <label for="name" class="text-white text-lg">Name</label>
+        <div>
+          <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full" placeholder="Enter your name">
+        </div>
+
+        <label for="name" class="text-white text-lg">Email</label>
+        <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full" placeholder="Enter your email">
+
+        <label for="name" class="text-white text-lg">Your Message</label>
+        <textarea name="message" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full" placeholder="Write your message here"></textarea>
+        
+        <input type="submit" class="bg-[#0849ee] text-white font-bold text-xl pb-2 pt-1 rounded-md w-32 self-end cursor-pointer hover:bg-[#051484] hover:scale-105 transition-all" value="Send">
+    </form>
+    
+
+  </section>
   
 </body>
 </html>
