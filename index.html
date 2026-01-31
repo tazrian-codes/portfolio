@@ -17,8 +17,10 @@
   <link rel="stylesheet" href="output.css">
 </head>
 <body class="h-screen bg-[#0b0f1a] relative">
-  <header class="fixed w-full bg-linear-to-r from-[#121f3d] via-[#1e3a8a] to-[#2563eb]
-                  h-12 bg left-0 bottom-0 md:top-0" id="header">
+  <header class="fixed w-full bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-content text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite]
+                  h-12 bg left-0 bottom-0 md:top-0 shadow-[0px_-2px_2px_rgba(255,255,255,0.1)]
+                  md:shadow-[0px_2px_2px_rgba(255,255,255,0.1)]" id="header">
     <nav>
       <ul class="text-center">
         <li class="active inline-block hover:bg-[#319fff]">
@@ -75,6 +77,11 @@
         <p class="text-white text-xl md:text-xl">Currently focused on front-end development, with a
           growing interest in full-stack technologies.
         </p>
+        <div class="flex items-center gap-4 mt-2">
+          <a class="cursor-pointer rounded-full p-2 transition hover:bg-[#2eb3ff]/20" href=""><img src="assets/images/linkedin-svgrepo-com.png" class="w-7 md:w-8"></a>
+          <a class="cursor-pointer rounded-full p-2 transition hover:bg-[#2eb3ff]/20" href=""><img src="assets/images/github-142-svgrepo-com.png" class="w-5 md:w-6"></a>
+          <a class="cursor-pointer rounded-full p-2 transition hover:bg-[#2eb3ff]/20" href=""><img src="assets/images/facebook-svgrepo-com.png" class="w-6 md:w-7"></a>
+      </div>
       </div>
       
     </div>
@@ -82,7 +89,8 @@
 
   <!-- About Section -->
   <section id="about" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="text-[#2eb3ff] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">About Me</h1>
+    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">About Me</h1>
     <p class="text-white m-3 p-3 text-xl">I am a web developer who believes faith and work 
       should align. <span class="text-[#2eb3ff] font-bold">My Islamic values shape how 
       I approach technology.</span> I aim to create clean, 
@@ -95,7 +103,8 @@
 
   <!-- Skills Section -->
   <section id="skills" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="text-[#2eb3ff] text-center mb-4 text-2xl md:text-4xl font-bold uppercase">Skills</h1>
+    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-4 text-2xl md:text-4xl font-bold uppercase">Skills</h1>
     
     <div class="images flex flex-wrap justify-center ml-2 mr-2 mt-8 gap-4">
       <div class="image bg-transparent border-4 border-[#e44d26] w-36 h-12 flex justify-center items-center p-3">
@@ -108,16 +117,28 @@
         <span class=" text-[#1172b8] font-bold text-2xl text-center pb-1">CSS</span>
       </div>
 
+      <div class="image bg-transparent border-4 border-[#18b6b9] w-36 h-12 flex justify-center items-center p-3">
+        <img src="assets/images/tailwindcss-icon-svgrepo-com.png" class="w-6 h-6 mr-1 ">
+        <span class=" text-[#18b6b9] font-bold text-xl text-center pb-1">Tailwindcss</span>
+      </div>
+
       <div class="image bg-transparent border-4 border-[#f7df1e] w-36 h-12 flex justify-center items-center p-3">
         <img src="assets/images/javascript-svgrepo-com.png" class="w-6 h-6 mr-1 ">
         <span class=" text-[#f7df1e] font-bold text-xl text-center pb-1">Javascipt</span>
       </div>
+
+      <div class="image bg-transparent border-4 border-[#f75510] w-36 h-12 flex justify-center items-center p-3">
+        <img src="assets/images/git-svgrepo-com.png" class="w-6 h-6 mr-1 ">
+        <span class=" text-[#f75510] font-bold text-xl text-center pb-1">Git</span>
+      </div>
+
     </div>
   </section>
 
   <!-- Section Projects -->
   <section id="projects" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="text-[#2eb3ff] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Projects</h1>
+    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Projects</h1>
     <div class="projects flex flex-wrap items-center justify-center gap-6 mb-12">
       <div class="project flex flex-col justify-center w-64 md:w-84 border border-[#2eb3ff] rounded-lg p-2 pl-3
                   hover:scale-110 hover:shadow-[3px_3px_5px_rgba(177,237,255,0.3)] cursor-pointer transition">
@@ -152,25 +173,49 @@
 
   <!-- Section Contact -->
   <section id="contact" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="text-[#2eb3ff] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Contact Form</h1>
-    <form class="flex flex-col w-full justify-center">
+    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Contact Form</h1>
+    <form class="flex flex-col w-full justify-center items-center mx-auto">
       
-        <label for="name" class="text-white text-lg">Name</label>
-        <div>
-          <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full" placeholder="Enter your name">
+      
+        <div class="w-3/4 md:w-5/12">
+          <label for="name" class="text-white text-lg">Name</label>
+          <div>
+            <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full md:w-full" placeholder="Enter your name">
+          </div>
         </div>
 
-        <label for="name" class="text-white text-lg">Email</label>
-        <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full" placeholder="Enter your email">
+        <div class="w-3/4 md:w-5/12">
+          <label for="name" class="text-white text-lg">Email</label>
+          <div>
+            <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full md:w-full" placeholder="Enter your email">
+          </div>
+        </div>
 
-        <label for="name" class="text-white text-lg">Your Message</label>
-        <textarea name="message" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full" placeholder="Write your message here"></textarea>
-        
-        <input type="submit" class="bg-[#0849ee] text-white font-bold text-xl pb-2 pt-1 rounded-md w-32 self-end cursor-pointer hover:bg-[#051484] hover:scale-105 transition-all" value="Send">
-    </form>
-    
-
+        <div class="w-3/4 md:w-5/12">
+          <label for="name" class="text-white text-lg">Your Message</label>
+          <div>
+            <textarea name="message" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full h-32 md:w-full" placeholder="Write your message here"></textarea>
+          </div>
+          <div class="w-full flex justify-end">
+          <a href="mailto:tazrianislam06@gmail.com" class="bg-[#235bea] text-white font-bold text-center text-xl pb-2 pt-1 rounded-md w-32 cursor-pointer hover:bg-[#0e23c6] hover:scale-105 transition-all">Send</a>
+          </div>
+        </div>
+      </form>
   </section>
+
+  <footer class="bg-[#0f172a] border-none w-full h-52 md:h-40 border-t-2 p-4 flex justify-center items-center">
+    <div class="flex flex-col justify-center items-center">
+      <div class="flex items-center gap-4 mb-2">
+        <a class="cursor-pointer hover:scale-110 transition-all" href=""><img src="assets/images/linkedin-svgrepo-com.png" class="w-7 md:w-8"></a>
+        <a class="cursor-pointer hover:scale-110 transition-all" href=""><img src="assets/images/github-142-svgrepo-com.png" class="w-5 md:w-6"></a>
+        <a class="cursor-pointer hover:scale-110 transition-all" href=""><img src="assets/images/facebook-svgrepo-com.png" class="w-6 md:w-7"></a>
+      </div>
+      <h3 class="text-[#cbd5f5] mb-4">&copy 2026 All rights reserved || Tazrian Islam</h3>
+    </div>
+
+
+  </footer>
   
 </body>
 </html>
