@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tazrian's Portfolio</title>
+  <title> Tazrian's Portfolio</title>
+
+  <!-- link portfolio logo  -->
+  <link rel="icon" href="assets/images/1000024602.png">
 
   <!-- Link Boxicon Icons -->
   <!-- Basic Icons -->
@@ -17,7 +20,7 @@
   <link rel="stylesheet" href="output.css">
 </head>
 <body class="h-screen bg-[#0b0f1a] relative">
-  <header class="fixed w-full bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-content text-transparent
+  <header class="fixed w-full bg-linear-to-r from-[#063092] via-[#1b51e3] to-[#4492fe] bg-clip-content text-transparent
                bg-size-[200%_200%] animate-[gradient_5s_ease_infinite]
                   h-12 bg left-0 bottom-0 md:top-0 shadow-[0px_-2px_2px_rgba(255,255,255,0.1)]
                   md:shadow-[0px_2px_2px_rgba(255,255,255,0.1)]" id="header">
@@ -89,7 +92,7 @@
 
   <!-- About Section -->
   <section id="about" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
+    <h1 class="bg-linear-to-r from-[#063092] via-[#1b51e3] to-[#599eff] bg-clip-text text-transparent
                bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">About Me</h1>
     <p class="text-white m-3 p-3 text-xl">I am a web developer who believes faith and work 
       should align. <span class="text-[#2eb3ff] font-bold">My Islamic values shape how 
@@ -103,8 +106,8 @@
 
   <!-- Skills Section -->
   <section id="skills" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
-               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-4 text-2xl md:text-4xl font-bold uppercase">Skills</h1>
+    <h1 class="bg-linear-to-r from-[#063092] via-[#1b51e3] to-[#599eff] bg-clip-text text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Skills</h1>
     
     <div class="images flex flex-wrap justify-center ml-2 mr-2 mt-8 gap-4">
       <div class="image bg-transparent border-4 border-[#e44d26] w-36 h-12 flex justify-center items-center p-3">
@@ -137,7 +140,7 @@
 
   <!-- Section Projects -->
   <section id="projects" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
+    <h1 class="bg-linear-to-r from-[#063092] via-[#1b51e3] to-[#599eff] bg-clip-text text-transparent
                bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Projects</h1>
     <div class="projects flex flex-wrap items-center justify-center gap-6 mb-12">
       <div class="project flex flex-col justify-center w-64 md:w-84 border border-[#2eb3ff] rounded-lg p-2 pl-3
@@ -168,37 +171,38 @@
         <p><a href="" class="text-[#2eb3ff] text-sm cursor-pointer hover:underline">Live Link</a></p>
       </div>
     </div>
+    <a href="project.html"><h3 class="text-[#2eb3ff] hover:underline">Show more...</h3></a>
     
   </section>
 
   <!-- Section Contact -->
   <section id="contact" class="h-screen flex flex-col items-center justify-center m-4">
-    <h1 class="bg-linear-to-r from-[#1c387a] via-[#224198] to-[#1e65ff] bg-clip-text text-transparent
-               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Contact Form</h1>
-    <form class="flex flex-col w-full justify-center items-center mx-auto">
+    <h1 class="bg-linear-to-r from-[#063092] via-[#1b51e3] to-[#599eff] bg-clip-text text-transparent
+               bg-size-[200%_200%] animate-[gradient_5s_ease_infinite] text-center mb-8 text-2xl md:text-4xl font-bold uppercase">Contact Form</h1>
+    <form id="form" class="flex flex-col w-full justify-center items-center mx-auto">
       
       
         <div class="w-3/4 md:w-5/12">
           <label for="name" class="text-white text-lg">Name</label>
           <div>
-            <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full md:w-full" placeholder="Enter your name">
+            <input name="user_name" type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full md:w-full" placeholder="Enter your name" required>
           </div>
         </div>
 
         <div class="w-3/4 md:w-5/12">
           <label for="name" class="text-white text-lg">Email</label>
           <div>
-            <input type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full md:w-full" placeholder="Enter your email">
+            <input name="user_email" type="text" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full md:w-full" placeholder="Enter your email" required>
           </div>
         </div>
 
         <div class="w-3/4 md:w-5/12">
           <label for="name" class="text-white text-lg">Your Message</label>
           <div>
-            <textarea name="message" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full h-32 md:w-full" placeholder="Write your message here"></textarea>
+            <textarea name="message" class="text-white border-2 border-white rounded-md pl-2 pr-2 pt-1 pb-2 mt-1 mb-6 w-full h-32 md:w-full" placeholder="Write your message here" required></textarea>
           </div>
           <div class="w-full flex justify-end">
-          <a href="mailto:tazrianislam06@gmail.com" class="bg-[#235bea] text-white font-bold text-center text-xl pb-2 pt-1 rounded-md w-32 cursor-pointer hover:bg-[#0e23c6] hover:scale-105 transition-all">Send</a>
+          <button class="bg-[#235bea] text-white font-bold text-center text-xl pb-2 pt-1 rounded-md w-32 cursor-pointer hover:bg-[#0e23c6] hover:scale-105 transition-all">Send</button>
           </div>
         </div>
       </form>
@@ -208,14 +212,43 @@
     <div class="flex flex-col justify-center items-center">
       <div class="flex items-center gap-4 mb-2">
         <a class="cursor-pointer hover:scale-110 transition-all" href="https://www.linkedin.com/in/tazrian-codes"><img src="assets/images/linkedin-svgrepo-com.png" class="w-7 md:w-8"></a>
-        <a class="cursor-pointer hover:scale-110 transition-all" href="https://github.com/tazrian-codes><img src="assets/images/github-142-svgrepo-com.png" class="w-5 md:w-6"></a>
+        <a class="cursor-pointer hover:scale-110 transition-all" href="https://github.com/tazrian-codes"><img src="assets/images/github-142-svgrepo-com.png" class="w-5 md:w-6"></a>
         <a class="cursor-pointer hover:scale-110 transition-all" href="https://www.facebook.com/profile.php?id=61586769495985"><img src="assets/images/facebook-svgrepo-com.png" class="w-6 md:w-7"></a>
       </div>
       <h3 class="text-[#cbd5f5] mb-4">&copy 2026 All rights reserved || Tazrian Islam</h3>
     </div>
-
-
   </footer>
-  
+  <!-- Initialize Email Js -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "U6SfEFOCD4mMKvJfm",
+      });
+   })();
+
+  // Event Listener
+  const form = document.getElementById('form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_534we0m',
+      'template_h1emiaq',
+      form
+    )
+    .then(() => {
+      alert('Message sent successfully!');
+      form.reset();
+    })
+    .catch((error) => {
+      alert('Failed to send message!');
+      console.log(error)
+    });
+  });
+  </script>
 </body>
 </html>
